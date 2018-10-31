@@ -30,6 +30,25 @@ export class RegisterService implements IService {
         ]();
     };
 
+    getDataForRegisterFlat = () => {
+        return {
+            "logo": "assets/images/orrait-logo.png",
+            "title": "Welcome,",
+            "subtitle": "sign up and enjoy our app.",
+            "btnSignUp": "Sign up",
+            "txtUsername" : "Username",
+            "txtEmail" : "Email",
+            "txtPassword" : "Password",
+            "txtAgreeText" : "By creating an account you agree to our",
+            "btnTerms": "Terms & Conditions",
+            "and" : "and",
+            "btnPrivacy": "Privacy Policy",
+            "background": "",
+            "errorUser" : "Field can't be empty.",
+            "errorPassword" : "Field can't be empty.",
+            "errorEmail": "Invalid email address."
+        };
+    };
     //Register + logo data
     getDataForLayout1 = (): any => {
       return {
