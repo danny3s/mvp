@@ -32,4 +32,33 @@
       <button box-shadow text-capitalize button-follow ion-button item-end>{{item.button}}</button>
     </ion-item>
   </ion-list>
+
+  <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+            <ion-item  default-item no-lines *ngFor="let item of data.items;let i = index" (click)="onEvent('onItemClick', item)">
+                <ion-avatar  text-center>
+                  <img style="margin-left: 20%" [src]="item.avatar" />
+                  <h2 item-title>Recieve</h2>
+                </ion-avatar>
+                
+              
+              
+              </ion-item>
+        </ion-col>
+        <ion-col col-6>
+            <ion-item default-item no-lines *ngFor="let item of data.items;let i = index" (click)="onEvent('onItemClick', item)">
+                <ion-avatar  text-center>
+                  <img style="margin-left: 20%" [src]="item.avatar" />
+                  <h2 item-title>Send</h2>
+                </ion-avatar>
+               
+            
+              
+              </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
 </ion-content>
