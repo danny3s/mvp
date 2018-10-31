@@ -87,6 +87,7 @@ export class ItemsPage {
     navParams: NavParams) {
 
     this.listServices = {
+
       'checkBoxes': this.checkBoxService,
       'login': this.loginService,
       'register': this.registerService,
@@ -120,7 +121,7 @@ export class ItemsPage {
       this.pages = this.service.getAllThemes();
       this.title = this.service.getTitle();
     } else {
-      navCtrl.setRoot("HomePage");
+      navCtrl.setRoot("ItemDetailsPageImageGallery");
       return;
     }
   }

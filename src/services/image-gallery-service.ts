@@ -35,7 +35,7 @@ export class ImageGalleryService implements IService {
             "items": [
                 {
                     "id": 1,
-                    "title": "Art",
+                    "title": "Europe",
                     "image": "assets/images/gallery/full-gallery-content-1/0.jpg",
                     "items": [
                         {
@@ -94,7 +94,7 @@ export class ImageGalleryService implements IService {
                 },
                 {
                     "id": 2,
-                    "title": "Bridge",
+                    "title": "Asia",
                     "image": "assets/images/gallery/full-gallery-content-2/0.jpg",
                     "items": [
                         {
@@ -153,7 +153,7 @@ export class ImageGalleryService implements IService {
                 },
                 {
                     "id": 3,
-                    "title": "Camera",
+                    "title": "Oceania",
                     "image": "assets/images/gallery/full-gallery-content-3/0.jpg",
                     "items": [
                         {
@@ -216,7 +216,7 @@ export class ImageGalleryService implements IService {
                 },
                 {
                     "id": 4,
-                    "title": "Hot Air Balloon",
+                    "title": "Latin America",
                     "image": "assets/images/gallery/full-gallery-content-4/0.jpg",
                     "items": [
                         {
@@ -259,7 +259,7 @@ export class ImageGalleryService implements IService {
                 },
                 {
                     "id": 5,
-                    "title": "boat",
+                    "title": "North America",
                     "image": "assets/images/gallery/full-gallery-content-5/0.jpg",
                     "items": [
                         {

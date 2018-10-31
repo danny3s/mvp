@@ -9,19 +9,78 @@ import { IService } from '../../services/IService';
 })
 export class ItemDetailsPageSearchBar {
 
-  page: any;
+  page:any;
   service: IService;
   params: any = {};
 
-  constructor(public navCtrl: NavController, navParams: NavParams) {
-    // If we navigated to this page, we will have an item available as a nav param
-    this.page = navParams.get('page');
-    this.service = navParams.get('service');
-    if (this.service) {
-      this.params = this.service.prepareParams(this.page, navCtrl);
-      this.params.data = this.service.load(this.page);
-    } else {
-      navCtrl.setRoot("HomePage");
-    }		
+  data:any = {};
+
+
+  constructor(public navCtrl: NavController, navParams: NavParams){
+ 
+    this.params.data = {
+ 
+            "headerTitle": "Field + header 2",
+            "title": "Search Friends",
+            "headerImage": "assets/images/background/39.jpg",
+            "items": [
+                {
+                    "id": 1,
+                    "title": "Colombia",
+                    "avatar": "assets/images/avatar/25.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Argentina",
+                 
+         
+                    "avatar": "assets/images/avatar/26.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Brazil",
+                    "avatar": "assets/images/avatar/27.jpg"
+                },
+                {
+                    "id": 4,
+                    "title": "Mexico",
+                    "avatar": "assets/images/avatar/28.jpg"
+                },
+                {
+                    "id": 5,
+                    "title": "Chile",
+                    "avatar": "assets/images/avatar/29.jpg"
+                },
+                {
+                    "id": 6,
+                    "title": "Cuba",
+                    "avatar": "assets/images/avatar/30.jpg"
+                },
+                {
+                    "id": 7,
+                    "title": "Panama",
+                    "avatar": "assets/images/avatar/31.jpg"
+                },
+                {
+                    "id": 8,
+                    "title": "Jamaica",
+                    "avatar": "assets/images/avatar/32.jpg"
+                }
+            ]
+    };
+
+
+    this.params.events = {
+
+            'onTextChange': function(text: any) {
+              console.log("a")
+            },
+            'onItemClick': function(item: any) {
+              console.log("a")
+            }
+  
+    };
+
+
   }
 }

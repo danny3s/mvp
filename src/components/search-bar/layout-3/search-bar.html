@@ -4,12 +4,12 @@
     <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
-    <ion-title *ngIf="data != null">{{data.headerTitle}}</ion-title>
+    
   </ion-navbar>
   <ion-toolbar no-padding transparent>
       <div search-bar-bcg padding-horizontal>
         <!-- Header Title -->
-        <h1 ion-text no-margin padding-left search-bar-title>{{data.title}}</h1>
+        <h1 ion-text no-margin padding-left search-bar-title>Search Country</h1>
         <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="onEvent('onTextChange', $event)"></ion-searchbar>
       </div>
   </ion-toolbar>

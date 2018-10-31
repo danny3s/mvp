@@ -13,11 +13,11 @@ export class ImageGalleryLayout1 implements OnChanges{
   constructor(public navCtrl: NavController, navParams: NavParams) { }
 
   openSubGallery = (group: any, index: number): any => {
-    this.navCtrl.push(group.subGallery, {
-      'group': group.items[index],
-      'events': this.events,
-      'layout': 1
-    });
+    
+    console.log(index);
+    if(index == 0){
+      this.navCtrl.push("ItemDetailsPageSearchBar");
+    }
   }
 
   ngOnChanges(changes: { [propKey: string]: any }) {

@@ -3,7 +3,7 @@
     <name>Orrait</name>
     <description>Home Sharing Dapp</description>
     <author email="dev@csform.com" href="http://csform.com/">-</author>
-    <content original-src="index.html" src="http://192.168.3.97:8101" />
+    <content original-src="index.html" src="http://192.168.3.97:8100" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
     <allow-navigation href="http://192.168.1.190:8101" />
@@ -80,6 +80,7 @@
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
     <allow-navigation href="http://192.168.1.113:8100" />
     <allow-navigation href="http://192.168.3.97:8100" sessionid="71ba51fc" />
-    <allow-navigation href="http://192.168.3.97:8101" sessionid="6dd76109" />
+    <allow-navigation href="http://192.168.3.97:8101" sessionid="67e6a7f9" />
+    <allow-navigation href="http://192.168.0.5:8100" sessionid="9d170ac4" />
     <engine name="android" spec="7.1.1" />
 </widget>

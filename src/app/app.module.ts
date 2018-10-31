@@ -17,6 +17,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http';
 
 import { WizardLayout2 } from '../components/wizard/layout-2/wizard-layout-2';
+import { ImageGalleryLayout1 } from '../components/image-gallery/layout-1/image-gallery-layout-1';
+import { SearchBarLayout3 } from '../components/search-bar/layout-3/search-bar-layout-3';
 
 @NgModule({
   declarations: [

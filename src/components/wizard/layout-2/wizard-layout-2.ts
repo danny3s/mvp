@@ -51,6 +51,6 @@ export class WizardLayout2 implements OnChanges {
     
     
   openPage() {
-    this.navCtrl.setRoot("HomePage");
+    this.navCtrl.setRoot("ItemDetailsPageImageGallery");
   }
 }

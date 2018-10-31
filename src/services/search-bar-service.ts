@@ -17,8 +17,6 @@ export class SearchBarService implements IService {
 
     getAllThemes = (): Array<any> => {
         return [
-          {"title" : "Simple", "theme"  : "layout1"},
-          {"title" : "Field + header", "theme"  : "layout2"},
           {"title" : "Field + header 2", "theme"  : "layout3"}
         ];
     };
@@ -31,121 +29,8 @@ export class SearchBarService implements IService {
         ]();
     };
 
-    // SEARCH - Simple data
-     getDataForLayout1 = (): any => {
-         return {
-             "headerTitle": "Simple",
-             "items": [
-                 {
-                     "id": 1,
-                     "category": "best offer",
-                     "image": "assets/images/background/32.jpg",
-                     "title": "Motocross Holidays",
-                     "subtitle": "West Avenue, NYC",
-                     "button": "$135.99",
-                 },
-                 {
-                     "id": 2,
-                     "category": "main event",
-                     "image": "assets/images/background/27.jpg",
-                     "title": "Open Air Concert",
-                     "subtitle": "Hyde Park, London",
-                     "button": "$312.99",
-                 },
-                 {
-                     "id": 3,
-                     "category": "Best Tourt",
-                     "image": "assets/images/background/31.jpg",
-                     "title": "Sea ture",
-                     "subtitle": "Guilin, Kweilin",
-                     "button": "$213.45",
-                 },
-                 {
-                     "id": 4,
-                     "category": "Mountain",
-                     "image": "assets/images/background/29.jpg",
-                     "title": "Mountain Trout",
-                     "subtitle": "Mountain Trout Camp",
-                     "button": "$338.60",
-                 },
-                 {
-                     "id": 5,
-                     "category": "Bridge Tour",
-                     "image": "assets/images/background/25.jpg",
-                     "title": "Bridge Tour",
-                     "subtitle": "BridgeClimb, Sydney",
-                     "button": "$410.85",
-                 },
-                 {
-                     "id": 6,
-                     "category": "best events",
-                     "image": "assets/images/background/30.jpg",
-                     "title": "Skateboard tour",
-                     "subtitle": "Hyde Park, London",
-                     "button": "$516.55",
-                 }
-             ]
-         };
-    };
 
-    // SEARCH - Field + header data
-    getDataForLayout2 = (): any => {
-        return {
-            "headerTitle": "Field + header",
-            "title": "Just type",
-            "headerImage": "assets/images/background/39.jpg",
-            "items": [
-                {
-                    "title": "Theresa Mason",
-                    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "avatar": "assets/images/avatar/10.jpg",
-                    "button": "GET"
-                },
-                {
-                    "title": "Samantha Kennedy",
-                    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "avatar": "assets/images/avatar/11.jpg",
-                    "button": "GET"
-                },
-                {
-                    "title": "Ray Clarke",
-                    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "avatar": "assets/images/avatar/12.jpg",
-                    "button": "GET"
-                },
-                {
-                    "title": "Fiona Edwards",
-                    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "avatar": "assets/images/avatar/13.jpg",
-                    "button": "GET"
-                },
-                {
-                    "title": "Rebecca Reid",
-                    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "avatar": "assets/images/avatar/14.jpg",
-                    "button": "GET"
-                },
-                {
-                    "title": "Victoria Simpson",
-                    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "avatar": "assets/images/avatar/15.jpg",
-                    "button": "GET"
-                },
-                {
-                    "title": "Martin Mason",
-                    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "avatar": "assets/images/avatar/16.jpg",
-                    "button": "GET"
-                },
-                {
-                    "title": "Jake Taylor",
-                    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "avatar": "assets/images/avatar/17.jpg",
-                    "button": "GET"
-                }
-            ]
-        };
-    };
+
 
     // SEARCH - Field + header 2 data
     getDataForLayout3 = (): any => {
