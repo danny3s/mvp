@@ -19,6 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { WizardLayout2 } from '../components/wizard/layout-2/wizard-layout-2';
 import { ImageGalleryLayout1 } from '../components/image-gallery/layout-1/image-gallery-layout-1';
 import { SearchBarLayout3 } from '../components/search-bar/layout-3/search-bar-layout-3';
+import { LoginFlatPageModule } from '../pages/login-flat-page/login-flat-page.module';
+import { RegisterFlatPageModule } from '../pages/register-flat-page/register-flat-page.module';
+import { ResetPasswordFlatPageModule } from '../pages/reset-password-flat-page/reset-password-flat-page.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,7 @@ import { SearchBarLayout3 } from '../components/search-bar/layout-3/search-bar-l
   ],
   imports: [
     BrowserModule,
+
     HttpClientModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(AppSettings.FIREBASE_CONFIG),

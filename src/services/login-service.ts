@@ -18,7 +18,8 @@ export class LoginService implements IService {
     getAllThemes = (): Array<any> => {
         return [
           {"title" : "Login + logo 1", "theme"  : "layout1"},
-          {"title" : "Login + logo 2", "theme"  : "layout2"}
+          {"title" : "Login + logo 2", "theme"  : "layout2"},
+          {"title" : "login", "theme" : "LoginFlatPage" },
         ];
     };
 
@@ -28,6 +29,24 @@ export class LoginService implements IService {
             menuItem.theme.charAt(0).toUpperCase() +
             menuItem.theme.slice(1)
         ]();
+    };
+
+    getDataForLoginFlat = () => {
+        let data = {
+            "logo": "assets/images/orrait-logo.png",
+            "btnLogin": "Login",
+            "txtUsername" : "Username",
+            "txtPassword" : "Password",
+            "txtForgotPassword" : "Forgot password?",
+            "btnResetYourPassword": "Reset your password",
+            "txtSignupnow" : "Don't have an account?",
+            "btnSignupnow": "Signup now",
+            "title": "Welcome back,",
+            "subtitle": "please login to your account.",
+            "errorUser" : "Field can't be empty.",
+            "errorPassword" : "Field can't be empty."
+        };
+        return data;
     };
 
     // LOGIN - Login + logo 1 data
