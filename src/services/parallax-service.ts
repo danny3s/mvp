@@ -17,10 +17,8 @@ export class ParallaxService implements IService {
 
     getAllThemes = (): Array<any> => {
         return [
-            { "title": "News List", "theme": "layout1" },
-            { "title": "Profile", "theme": "layout2" },
-            { "title": "Product", "theme": "layout3" },
-            { "title": "News", "theme": "layout4" }
+          { "title": "Profile", "theme": "layout2" },
+
         ];
     };
 
@@ -32,113 +30,6 @@ export class ParallaxService implements IService {
         ]();
     };
 
-    // PARALLAX - News List data
-    getDataForLayout1 = (): any => {
-        return {
-            "headerTitle": "Showbiz",
-            "headerImage": "assets/images/background/34.jpg",
-            "title": "Engage real-time",
-            "subtitle": "Startup Pitches",
-            "items": [
-                {
-                    "id": 1,
-                    "title": "Victoria Simpson",
-                    "subtitle": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                    "image": "assets/images/avatar/24.jpg",
-                    "imageAlt": "avatar",
-                    "button": "Read"
-                },
-                {
-                    "id": 2,
-                    "title": "Samantha Reynolds",
-                    "subtitle": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                    "image": "assets/images/avatar/10.jpg",
-                    "imageAlt": "avatar",
-                    "button": "Read"
-                },
-                {
-                    "id": 3,
-                    "title": "Stacey Harris",
-                    "subtitle": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                    "image": "assets/images/avatar/11.jpg",
-                    "imageAlt": "avatar",
-                    "button": "Read"
-                },
-                {
-                    "id": 4,
-                    "title": "Jacqueline Guyon",
-                    "subtitle": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                    "image": "assets/images/avatar/12.jpg",
-                    "imageAlt": "avatar",
-                    "button": "Read"
-                },
-                {
-                    "id": 5,
-                    "title": "Mia Langevoort",
-                    "subtitle": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                    "image": "assets/images/avatar/13.jpg",
-                    "imageAlt": "avatar",
-                    "button": "Read"
-                },
-                {
-                    "id": 6,
-                    "title": "Amy Simsek",
-                    "subtitle": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                    "image": "assets/images/avatar/14.jpg",
-                    "imageAlt": "avatar",
-                    "button": "Read"
-                },
-                {
-                    "id": 7,
-                    "title": "Charlotte Sital",
-                    "subtitle": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                    "image": "assets/images/avatar/15.jpg",
-                    "imageAlt": "avatar",
-                    "button": "Read"
-                },
-                {
-                    "id": 8,
-                    "title": "Iria Padrón",
-                    "subtitle": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                    "image": "assets/images/avatar/16.jpg",
-                    "imageAlt": "avatar",
-                    "button": "Read"
-                },
-                {
-                    "id": 9,
-                    "title": "Laura Sarabia",
-                    "subtitle": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                    "image": "assets/images/avatar/17.jpg",
-                    "imageAlt": "avatar",
-                    "button": "Read"
-                },
-                {
-                    "id": 10,
-                    "title": "Alexia Bañuelos",
-                    "subtitle": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                    "image": "assets/images/avatar/18.jpg",
-                    "imageAlt": "avatar",
-                    "button": "Read"
-                },
-                {
-                    "id": 11,
-                    "title": "Erika Quiroz",
-                    "subtitle": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                    "image": "assets/images/avatar/19.jpg",
-                    "imageAlt": "avatar",
-                    "button": "Read"
-                },
-                {
-                    "id": 12,
-                    "title": "Emma Banda",
-                    "subtitle": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-                    "image": "assets/images/avatar/20.jpg",
-                    "imageAlt": "Presque Isle Harbor",
-                    "button": "Read"
-                }
-            ]
-        };
-    };
 
     // PARALLAX - Profile data
     getDataForLayout2 = (): any => {
@@ -223,78 +114,6 @@ export class ParallaxService implements IService {
         };
     };
 
-    // PARALLAX - Product data
-    getDataForLayout3 = (): any => {
-        return {
-            "headerTitle": "Product",
-            "headerImage": "assets/images/background/14.jpg",
-            "shareIcon": "more",
-            "items": [
-                {
-                    "id": 1,
-                    "category": "NEW OFFER",
-                    "title": "Super & Black",
-                    "titleDescription" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy",
-                    "subtitle": "Available Now",
-                    "button": "$63.99",
-                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    "productDescriptions": [
-                        {
-                            "id": 1,
-                            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                        },
-                        {
-                            "id": 2,
-                            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                        },
-                        {
-                            "id": 3,
-                            "description": "Passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum"
-                        },
-                        {
-                            "id": 4,
-                            "description": "Passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum"
-                        }
-                    ]
-                }
-            ]
-        };
-    };
-
-    // PARALLAX - News data
-    getDataForLayout4 = (): any => {
-        return {
-            "headerTitle": "News",
-            "headerImage": "assets/images/background/5.jpg",
-            "title": "Infinit bridge made in China.",
-            "subtitle": "by Myrtle Stiedemann",
-            "category": "ENGINEERING",
-            "avatar": "assets/images/avatar/24.jpg",
-            "shareIcon": "more",
-            "items": [
-                {
-                    "id": 1,
-                    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-                },
-                {
-                    "id": 2,
-                    "title": "Lorem ipsum dolor sit amet",
-                    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-                },
-                {
-                    "id": 3,
-                    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-                },
-                {
-                    "id": 4,
-                    "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-                }
-            ]
-        };
-    }
 
     getEventsForTheme = (menuItem: any): any => {
       var that = this;

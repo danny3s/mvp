@@ -609,7 +609,7 @@ $span-size:( 'span-small': 14px, 'span-medium': 15px, 'span-large': 24px);
 
 [button-icon] {
     background:theme-colors('mainColors', 'primaryBase') !important;
-    color: theme-colors('textColors', 'accent') !important;
+    color: 'theme-colors('textColors', 'accent') '!important;
     font-size: $h3-font-size !important;
     font-weight: 500 !important;
     height: auto !important;

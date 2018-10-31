@@ -48,7 +48,7 @@ parallax-layout-2 {
 
     &:before {
       content: "";
-      @include gradient-secondary;
+      @include gradient-primary ;
       position: absolute;
       height: 50%;
       bottom: 0;

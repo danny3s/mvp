@@ -16,14 +16,21 @@ export class ItemDetailsPageImageGallery {
 
     data:any = {};
 
+    profile(){
+        console.log("ok");
+        this.navCtrl.push("ItemDetailsPageParallax");
+    }
+
 
 
     constructor(public navCtrl: NavController, navParams: NavParams,public service:HomeService) {
 
+    
+        
+
         service.load().subscribe(snapshot => {
             this.data = snapshot;
           });
-
         // If we navigated to this page, we will have an item available as a nav param
         this.params.data = {
             
@@ -90,7 +97,7 @@ export class ItemDetailsPageImageGallery {
                 {
                     "id": 2,
                     "title": "Europe",
-                    "image": "assets/images/gallery/full-gallery-content-2/0.jpg",
+                    "image": "assets/images/gallery/continents/0.jpg",
                     "items": [
                         {
                             "id": 1,
@@ -149,7 +156,7 @@ export class ItemDetailsPageImageGallery {
                 {
                     "id": 3,
                     "title": "Asia",
-                    "image": "assets/images/gallery/full-gallery-content-3/0.jpg",
+                    "image": "assets/images/gallery/continents/1.jpg",
                     "items": [
                         {
                             "id": 1,
@@ -212,7 +219,7 @@ export class ItemDetailsPageImageGallery {
                 {
                     "id": 4,
                     "title": "Oceania",
-                    "image": "assets/images/gallery/full-gallery-content-4/0.jpg",
+                    "image": "assets/images/gallery/continents/3.jpg",
                     "items": [
                         {
                             "id": 1,
@@ -255,7 +262,7 @@ export class ItemDetailsPageImageGallery {
                 {
                     "id": 5,
                     "title": "North America",
-                    "image": "assets/images/gallery/full-gallery-content-5/0.jpg",
+                    "image": "assets/images/gallery/continents/4.jpg",
                     "items": [
                         {
                             "id": 1,
@@ -322,7 +329,7 @@ export class ItemDetailsPageImageGallery {
                 {
                     "id": 6,
                     "title": "Africa",
-                    "image": "assets/images/gallery/full-gallery-content-6/0.jpg",
+                    "image": "assets/images/gallery/continents/5.jpg",
                     "favorite": true,
                     "items": [
                         {
@@ -400,6 +407,7 @@ export class ItemDetailsPageImageGallery {
             ]
 
     
-        }
+        };
+
     }
 }
