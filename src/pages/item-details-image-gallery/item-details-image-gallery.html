@@ -1,0 +1,14 @@
+<!---Image gallery components-->
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>{{params.title}}</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <image-gallery-layout-1 *ngIf="params.imageGalleryLayout1" [data]="params.data" [events]="params.events">
+    </image-gallery-layout-1>
+
+</ion-content>
